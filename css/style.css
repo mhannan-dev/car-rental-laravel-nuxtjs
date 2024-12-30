@@ -1,0 +1,118 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Define global variables */
+:root {
+    --primary-color: #06186A;
+    --text-primary-color: #777777;
+    --background-color: #FFFFFF;
+    --font-family: 'Poppins', Arial, sans-serif;
+    --max-site-width: 120rem; /* 1920px / 16 = 120rem */
+    --default-container-width: 82.5rem; /* 1320px / 16 = 82.5rem */
+}
+
+/* General body styles */
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+}
+
+section {
+    padding: 6.875rem 0;
+}
+.section-title{
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+.section-description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-primary-color);
+}
+/* Common CSS end */
+
+/* Background Color for Biom */
+.biom-bg-light {
+    background-color: var(--background-color);
+}
+
+/* Full-width section */
+.full-width {
+    width: 120rem;
+    max-width: var(--max-site-width);
+    margin: 0 auto;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: var(--background-color); 
+}
+
+/* Navigation styles */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 1rem; /* 16px / 16 = 1rem */
+    color: var(--text-primary-color);
+    text-transform: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.dropdown .btn {
+    font-weight: 500;
+    font-size: 1rem; /* 16px / 16 = 1rem */
+    color: var(--text-primary-color);
+}
+
+.dropdown .btn:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.welcome-banner {
+    background-image: url('../images/welcomeBanner.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 45.563rem;
+    background-attachment: scroll;
+}
+
+
+
+.welcome-content {
+    max-width: 45.875rem;
+    margin: 0 auto; 
+    padding: 1rem;
+}
+.welcome-content > .section-description{
+    color: var(--background-color);
+}
+
+/* About biom  */
+.about-biom-banner {
+    background-image: url('../images/Frame 2608761.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 40.625rem;
+    background-attachment: scroll;
+}
+.about-biom-banner, .about-section-description{
+    color: var(--text-primary-color) !important;
+}
