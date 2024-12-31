@@ -4,114 +4,65 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description"
         content="Bootstrap 5 starter kit template with jQuery, Animate.css, and all necessary meta tags for SEO and responsiveness." />
     <meta name="keywords" content="Bootstrap 5, Starter Kit, HTML, CSS, jQuery, Animate.css, Responsive Design" />
     <meta name="author" content="Your Name" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0d6efd" />
-    <meta property="og:title" content="Bootstrap 5 Starter Kit" />
-    <meta property="og:description"
-        content="A starter kit template for building responsive web applications with Bootstrap 5, jQuery, and Animate.css." />
-    <meta property="og:image" content="https://example.com/preview-image.png" />
-    <meta property="og:url" content="https://example.com" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Bootstrap 5 Starter Kit" />
-    <meta name="twitter:description"
-        content="A starter kit template for building responsive web applications with Bootstrap 5, jQuery, and Animate.css." />
-    <meta name="twitter:image" content="https://example.com/preview-image.png" />
     <title>Welcome to BIOM</title>
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body>
-    <!-- Full-width header -->
-    <header class="full-width biom-bg-light">
-        <nav class="navbar navbar-expand-lg container-xl sticky-top">
+    <!-- Header Section -->
+    <header class="biom-bg-light full-width">
+        <nav class="navbar navbar-expand-lg container-xl">
             <div class="container-fluid">
-                <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.svg" alt="Logo" width="50" height="50" />
                 </a>
-
-                <!-- Toggler for mobile view -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Navigation items -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">হোম</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">কোর্সসমূহ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">পরীক্ষাসমূহ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ফ্রি সার্ভিস</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">নোটিশ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ব্লগ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">বই</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="#">হোম</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">কোর্সসমূহ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">পরীক্ষাসমূহ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ফ্রি সার্ভিস</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">নোটিশ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ব্লগ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">বই</a></li>
                     </ul>
-
-                    <!-- Button with dropdown -->
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Join as
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">As Student</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">As Marketing Trainer</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">As Marketing Member</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="welcome-banner d-flex align-items-center justify-content-center text-center text-white">
+    <!-- Welcome Section -->
+    <section class="full-width welcome-banner d-flex align-items-center justify-content-center text-center text-white">
         <div class="container">
             <div class="welcome-content">
                 <h1 class="section-title">Welcome to BIOM</h1>
                 <p class="section-description">
-                    ইসলামী জ্ঞান অর্জনের অনলাইনভিত্তিক অনন্য একটি শিক্ষা প্রতিষ্ঠান। এতে
-                    আরবীভাষা ও সাহিত্যসহ কুরআন-হাদীস-ফিকহ-আকীদা ইত্যাদি শরীয়তের বিভিন্ন
-                    বিষয়ে রয়েছে পেইড ও ফ্রি কোর্সসমূহ
+                    ইসলামী জ্ঞান অর্জনের অনলাইনভিত্তিক অনন্য একটি শিক্ষা প্রতিষ্ঠান। এতে আরবীভাষা ও সাহিত্যসহ
+                    কুরআন-হাদীস-ফিকহ-আকীদা ইত্যাদি শরীয়তের বিভিন্ন বিষয়ে রয়েছে পেইড ও ফ্রি কোর্সসমূহ।
                 </p>
                 <input type="search" class="form-control w-50 mx-auto" name="search"
                     placeholder="Search by course and blog" />
@@ -119,101 +70,17 @@
         </div>
     </section>
 
-    <section id="aboutBiom" class="text-center about-biom-banner">
-        <div class="welcome-content">
-            <h2 class="section-title">
-                নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক
-            </h2>
+    <!-- About BIOM Section -->
+    <section id="aboutBiom" class="full-width d-flex align-items-center justify-content-center text-center about-biom-banner">
+        <div class="container text-center">
+            <h2 class="section-title">নিজের শেখা নিজেই গুছিয়ে নেয়ার যাত্রা শুরু হোক</h2>
             <p class="about-section-description">
                 প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে নিয়ে যান অনন্য উচ্চতায়।
             </p>
         </div>
-        <div class="container">
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-start bg-light p-3 rounded shadow-sm">
-                        <div class="icon me-3">
-                            <img src="images/icon1.svg" alt="Icon 1" width="50" height="50">
-                        </div>
-                        <div class="text-start">
-                            <h3 class="card-title">BIOM</h3> <!--  Will be left align  -->
-                            <p class="card-text">প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে</p>
-                            <!--  Will be left align as   h3 -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-start bg-light p-3 rounded shadow-sm">
-                        <div class="icon me-3">
-                            <img src="images/icon1.svg" alt="Icon 1" width="50" height="50">
-                        </div>
-                        <div class="text-start">
-                            <h3 class="card-title">BIOM</h3> <!--  Will be left align  -->
-                            <p class="card-text">প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে</p>
-                            <!--  Will be left align as   h3 -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-start bg-light p-3 rounded shadow-sm">
-                        <div class="icon me-3">
-                            <img src="images/icon1.svg" alt="Icon 1" width="50" height="50">
-                        </div>
-                        <div class="text-start">
-                            <h3 class="card-title">মার্কেটিং ট্রেইনার/ট্রেইনারবৃন্দ</h3> <!--  Will be left align  -->
-                            <p class="card-text">প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে</p>
-                            <!--  Will be left align as   h3 -->
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-start bg-light p-3 rounded shadow-sm">
-                        <div class="icon me-3">
-                            <img src="images/icon1.svg" alt="Icon 1" width="50" height="50">
-                        </div>
-                        <div class="text-start">
-                            <h3 class="card-title">শিক্ষকবৃন্দ</h3> <!--  Will be left align  -->
-                            <p class="card-text">প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-start bg-light p-3 rounded shadow-sm">
-                        <div class="icon me-3">
-                            <img src="images/icon1.svg" alt="Icon 1" width="50" height="50">
-                        </div>
-                        <div class="text-start">
-                            <h3 class="card-title">শিক্ষকবৃন্দ</h3> <!--  Will be left align  -->
-                            <p class="card-text">প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="d-flex align-items-start bg-light p-3 rounded shadow-sm">
-                        <div class="icon me-3">
-                            <img src="images/icon6.svg" alt="Icon 1" width="50" height="50">
-                        </div>
-                        <div class="text-start">
-                            <h3 class="card-title">দাওয়াত ইসলাম</h3> <!--  Will be left align  -->
-                            <p class="card-text">প্রতিযোগিতামূলক এই জব-মার্কেটে নিজের ক্যারিয়ারকে</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </section>
 
-
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
