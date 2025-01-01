@@ -7,22 +7,37 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-color: #FFFFFF;
+:root {
+    --color-white: #FFFFFF;
+    --color-dark-grey: #777777;
+    --color-deep-primary: #071B78;
+    --color-deep-secondary: #000851;
 }
 
+/* Body */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--color-white);
+}
+section {
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+}
 /* Welcome Banner */
 .welcome-banner {
     background-image: url('../images/welcomeBanner.svg');
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
-    color: #FFFFFF;
+    min-height: 100vh;
+    color: var(--color-white);
 }
 
 .welcome-content .section-description {
-    color: #FFFFFF;
+    color: var(--color-white);
+    max-width: 45.875rem; 
+    margin: 0 auto; 
+    padding: 1rem; 
+    text-align: center;
 }
 
 /* About BIOM Section */
@@ -32,5 +47,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 60vh;
-    color: #777777;
+    color: var(--color-dark-grey);
+}
+
+.biom-platform {
+    background-image: url('../images/biomPlatfrom.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    color: var(--color-dark-grey);
+}
+.bg-deep-primary{
+    background-color: var(--color-deep-primary);
 }
