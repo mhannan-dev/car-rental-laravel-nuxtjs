@@ -12,6 +12,7 @@
     --color-dark-grey: #777777;
     --color-deep-primary: #071B78;
     --color-deep-secondary: #000851;
+    --color-rating-text: #202244;
 }
 
 /* Body */
@@ -98,3 +99,6 @@ section {
     text-decoration: line-through;
     margin-right: 1rem;
 }   
+.card-rating-text {
+    color: var(--color-rating-text)
+}
