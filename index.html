@@ -30,6 +30,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -69,7 +71,6 @@
         </nav>
     </header>
 
-    <!-- Welcome Section -->
     <section class="full-width welcome-banner d-flex align-items-center justify-content-center text-center text-white">
         <div class="container">
             <div class="welcome-content">
@@ -79,11 +80,19 @@
                     আরবীভাষা ও সাহিত্যসহ কুরআন-হাদীস-ফিকহ-আকীদা ইত্যাদি শরীয়তের বিভিন্ন
                     বিষয়ে রয়েছে পেইড ও ফ্রি কোর্সসমূহ।
                 </p>
-                <input type="search" class="form-control w-50 mx-auto" name="search"
-                    placeholder="Search by course and blog" />
+                <div class="search-container mx-auto">
+                    <input type="text" class="search-input" placeholder="Search by blog and course">
+                    <button class="search-button">
+                        <span class="search-icon">🔍</span>
+                        <span class="search-text">Search</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
+
+    
+    
 
     <!-- About BIOM Section -->
     <section id="aboutBiom"

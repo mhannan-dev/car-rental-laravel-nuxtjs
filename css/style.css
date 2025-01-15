@@ -11,7 +11,8 @@
     --color-white: #FFFFFF;
     --color-dark-grey: #777777;
     --color-deep-primary: #071B78;
-    --color-deep-secondary: #000851;
+    --color-deep-secondary: #030941;
+    --color-deep-secondary2: #000851;
     --color-rating-text: #202244;
 }
 
@@ -24,12 +25,15 @@ section {
     padding-bottom: 6.25rem;
     padding-top: 6.25rem;
 }
+.bg-deep-primary{
+    background-color: var(--color-deep-2);
+}
 /* Welcome Banner */
 .welcome-banner {
     background-image: url('../images/welcomeBanner.svg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    height: 727px;
     color: var(--color-white);
 }
 
@@ -39,6 +43,82 @@ section {
     margin: 0 auto; 
     padding: 1rem; 
     text-align: center;
+}
+/* Search container styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 2rem auto 0 auto;
+    background-color: #FFFFFF;
+}
+
+/* Search input styles */
+.search-input {
+    flex: 1;
+    height: 100%;
+    padding: 0 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Search button styles */
+button.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-deep-secondary);
+    color: #FFFFFF;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 0 8px 8px 0; 
+    margin: 0.3rem 10px 0.3rem 0; 
+    height: 80%;
+}
+
+
+.search-button:hover {
+    background-color: var(--color-deep-primary);
+}
+
+/* Icon and text within the button */
+.search-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.search-text {
+    font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .search-container {
+        width: 90%;
+        height: 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
 }
 
 /* About BIOM Section */
