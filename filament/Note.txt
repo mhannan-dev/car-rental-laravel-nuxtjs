@@ -1,2 +1,7 @@
+
+php artisan filament:optimize
+
+php artisan filament:optimize-clear
+
 php artisan make:filament-user
 

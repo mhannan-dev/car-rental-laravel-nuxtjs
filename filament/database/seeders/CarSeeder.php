@@ -22,7 +22,6 @@ class CarSeeder extends Seeder
             'license_plate' => 'XYZ123',
             'price_per_day' => 50.00,
             'description' => 'A reliable and fuel-efficient sedan.',
-            'image' => null,
             'status' => 'available',
             'category_id' => $categoryId,   // Random category
             'brand_id' => $brandId,         // Random brand

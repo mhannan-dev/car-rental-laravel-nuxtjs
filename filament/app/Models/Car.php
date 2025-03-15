@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Car extends Model
 {
@@ -16,7 +17,6 @@ class Car extends Model
         'model',
         'year',
         'license_plate',
-        'price_per_day',
         'description',
         'image',
         'status'
@@ -30,5 +30,25 @@ class Car extends Model
     public function reviews()
     {
         return $this->hasMany(Review::class);
+    }
+
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
+    }
+
+    public function images()
+    {
+        return $this->hasMany(\App\Models\CarImage::class);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function car_owner()
+    {
+        return $this->belongsTo(User::class);
     }
 }
